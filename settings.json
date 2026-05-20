@@ -1,0 +1,84 @@
+{
+  // --- Editor Settings ---
+  "editor.fontFamily": "'JetBrains Mono'",
+  "editor.fontSize": 16,
+  "editor.lineHeight": 1.8,
+  "editor.tabSize": 2,
+  "editor.rulers": [80, 120],
+  "editor.renderLineHighlight": "gutter",
+  "editor.fontLigatures": true,
+  "editor.semanticHighlighting.enabled": false,
+  "editor.formatOnSave": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorBlinking": "phase",
+  "editor.inlineSuggest.enabled": true,
+  "editor.quickSuggestions": {
+    "strings": true,
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // --- Workbench & UI Settings ---
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.editor.labelFormat": "short",
+  "workbench.startupEditor": "none",
+  "workbench.colorCustomizations": {},
+  "workbench.settings.applyToAllProfiles": [
+    "prettier.singleQuote",
+    "gitlens.ai.generateCommitMessage.customInstructions",
+    "docwriter.style",
+  ],
+  "workbench.editorAssociations": {
+    "*.xlsx": "default",
+  },
+  "explorer.compactFolders": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  // --- Terminal Settings ---
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font'",
+  "terminal.integrated.showExitAlert": false,
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  // --- Git & GitLens Settings ---
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "gitlens.ai.model": "gemini:gemini-2.5-flash",
+  "gitlens.ai.generateCommitMessage.customInstructions": "Generate a concise summary commit (in english) based on the \"semantic commits\", with this structure: <type>[optional scope]: <description>. (First line is 50 characters or less. Then a blank line. Remaining text should be of a maximum of 72 characters.) Examples of types: feat - Commits of type feat indicate that your code snippet is including a new feature (it relates to the MINOR version in semantic versioning).  fix - Commits of type fix indicate that your committed code snippet is solving a problem (bug fix), (it relates to the PATCH version in semantic versioning).  docs - Commits of type docs indicate that there were changes to the documentation, such as in the repository's Readme. (Does not include changes to code).  test - Commits of type test are used when changes are made to tests, whether creating, altering, or deleting unit tests. (Does not include changes to code).  build - Commits of type build are used when modifications are made to build files and dependencies.  perf - Commits of type perf are for identifying any code changes that are related to performance.  style - Commits of type style indicate that there were changes related to code formatting, semicolons, trailing spaces, lint... (Does not include changes to code).  refactor - Commits of type refactor refer to changes due to refactoring that do not alter its functionality, such as a change in how a certain part of the screen is processed, but which maintained the same functionality, or performance improvements due to a code review.  chore - Commits of type chore indicate updates to build tasks, admin configurations, packages... such as adding a package to gitignore. (Does not include changes to code).  ci - Commits of type ci indicate changes related to continuous integration.  raw - Commits of type raw indicate changes related to configuration files, data, features, parameters.  cleanup - Commits of type cleanup are used to remove commented-out code, unnecessary snippets, or any other form of cleaning up the source code, aiming to improve its readability and maintainability.  remove - Commits of type remove indicate the deletion of obsolete or unused files, directories, or functionalities, reducing the project's size and complexity and keeping it more organized.",
+  // --- File & File Watcher Settings ---
+  "files.autoSave": "afterDelay",
+  "files.associations": {
+    "*.jsx": "typescriptreact",
+  },
+  // --- Code Formatting & Prettier Settings ---
+  "prettier.tabWidth": 2,
+  "prettier.bracketSameLine": true,
+  "prettier.withNodeModules": true,
+  "prettier.singleQuote": true,
+  "prettier.jsxSingleQuote": true,
+  // --- Extensions Settings ---
+  "extensions.autoCheckUpdates": true,
+  "material-icon-theme.activeIconPack": "nest",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "emmet.triggerExpansionOnTab": true,
+  "tailwindCSS.emmetCompletions": true,
+  "eslint.validate": ["javascript"],
+  "css.validate": false,
+  "diffEditor.codeLens": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "antigravity.marketplaceExtensionGalleryServiceURL": "https://marketplace.visualstudio.com/_apis/public/gallery",
+  "antigravity.marketplaceGalleryItemURL": "https://marketplace.visualstudio.com/items",
+  // --- Language Specific Overrides ---
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "js/ts.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "workbench.colorTheme": "GitHub Light Monochrome",
+  "workbench.preferredLightColorTheme": "GitHub Light Monochrome Focused",
+}
